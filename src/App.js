@@ -1,5 +1,4 @@
 import Header from "./Header";
-import ScoreBoard from "./ScoreBoard";
 import Main from "./Main";
 function App() {
   return (
