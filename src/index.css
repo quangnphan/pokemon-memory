@@ -28,7 +28,7 @@ header{
   max-width: 1200px;
   margin: 30px auto;
   display: grid;
-  gap: 5px;
+  gap: 20px;
   grid-template-columns: repeat(4,1fr);
 }
 .card{
@@ -42,4 +42,20 @@ header{
 }
 .card:hover{
   opacity: 0.5;
+}
+@media(max-width:768px){
+  .grid{
+    max-width: 500px;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media(max-width:500px){
+  header{
+    font-size: 2rem;
+  }
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+    max-width: 370px;
+    gap: 5px;
+  }
 }
